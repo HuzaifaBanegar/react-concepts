@@ -6,9 +6,22 @@
     <title>Understanding Core of react</title>
 </head>
 <body>
+    <div id ="root">
 
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+    const heading = React.createElement('h1', {}, "Hello world From React" ) 
+    // React.createElement takes 3 args=> 1. Tag, 2. object, 3. What we want to put inside.
+
+    const root = ReactDOM.createRoot(document.getElementById('root'))
+    //Creating root is job of DOM hence ReactDOM
     
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    root.render(heading);
+
+</script>
 </body>
+
 </html>
