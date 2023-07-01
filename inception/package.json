@@ -1,0 +1,20 @@
+{
+  "name": "react-concepts",
+  "version": "1.0.0",
+  "description": "\"React revision\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/HuzaifaBanegar/react-concepts.git)"
+  },
+  "author": "Huzaifa Banegar",
+  "license": "ISC",
+  "devDependencies": {
+      "parcel": "^2.9.3"
+    }
+  
+}
+
