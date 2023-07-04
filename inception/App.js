@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Button } from "react-bootstrap";
+import { resData } from "./Jsondata";
 
 
 function UncontrolledExample() {
@@ -67,22 +67,27 @@ NavItems
 */ 
 
 
-const RestroCard=()=>{
+const RestroCard=(props)=>{
+    const {resData}=props;
+    console.log(resData)
     return(
         <div className="restroCard">
             <div className="thumbnail">
-                <img src="https://get.pxhere.com/photo/restaurant-dish-meal-food-produce-breakfast-croissant-gourmet-meat-cuisine-delicious-bistro-dining-brunch-benedict-french-food-full-breakfast-592159.jpg"></img>
+                <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+resData.cloudinaryImageId}></img>
             </div>
             <div className="restroDetails">
                 <div className="about_restro">
-                    <p>Barbecue Nights</p>
-                    <p>Cuisine: Chinese</p>
+                    <h6>{resData.name}</h6>
                 </div>
                 <div className="feat_restro">
-                    <p>Rating: 4/5</p>
-                    <p>Price: 450/person</p>
+                    <p>Cuisine: {resData.cuisines[0]}</p>
+                    <p>Price For Two: {resData.costForTwo/100} Rs</p>
                 </div>
-                <p>Delivers in: 30 mins</p>
+                <div className="rating_Del">
+                <p>Rating: {resData.avgRating} </p>
+                <p>Delivers in: {resData.maxDeliveryTime} mins</p>
+                </div>
+                
             </div>
             <button>Add To Cart</button>
         </div>
@@ -101,11 +106,12 @@ const Body=()=>{
                 <button>Search</button>
             </div>
             <div className="restroContainer">
-                <RestroCard></RestroCard>
-
+                {
+                  resData.map(e=>{
+                    return <RestroCard key={e.data.id} resData={e.data}></RestroCard>
+                  }) 
+                }
             </div>
-            
-   
         </div>
     )
 }
@@ -135,11 +141,36 @@ const Header= ()=>{
     )
 }
 
+const Footer=()=>{
+    return(
+        <div className="footer">
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Cart</li>
+                    <li>Login</li>
+                </ul>
+            </div>
+            <div className="subscription">
+                <h5>Subscibe to our News Letter</h5>
+                <input type="email"></input>
+                <button>Subscibe</button>
+            </div>
+            <div className="copyright">
+                <h5>© CopyRights by Huzaifa 😉</h5>
+                <p>Contact: banegarhuzzi1010@gmail.com</p>
+            </div>
+        </div>
+    )
+}
+
 const AppLayout=()=>{
     return (
         <div className="app">
             {Header()}
             <Body></Body>
+            <Footer/>
             
         </div>
     )

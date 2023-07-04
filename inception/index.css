@@ -6,13 +6,13 @@ body{
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid rgb(218, 217, 217);
-    margin-bottom: 10px;
-    font-size: smaller;
+    margin: 0px -10px 10px ;
+    font-size: 20px;
     font-weight: bold;
 }
 .logo{
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     margin-left: 20px;
 }
 img{
@@ -20,6 +20,7 @@ img{
     margin-right: 20px;
 }
 .navitems>ul{
+    margin-top: 5%;
     display: flex;
 }
 .navitems>ul>li{
@@ -58,9 +59,6 @@ img{
 }
 .restroCard{
     display: block;
-    width: 250px;
-    /* height: 300px; */
-    gap: 10px;
     padding: 10px;
     font-size: smaller;
     box-shadow:
@@ -69,11 +67,14 @@ img{
     0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12)
-  ;
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    margin-bottom: 10px;
+}
+.restroCard:hover{
+    scale: 1.05;
 }
 .thumbnail{
-    height: 65%;
+    height: 60%;
     margin-bottom: 5px;
 }
 .thumbnail>img{
@@ -95,6 +96,38 @@ img{
     background-color: rgb(181, 47, 47);
     padding: 5px;
 }
+.rating_Del{
+    display: flex;
+    justify-content: space-between;
+}
+.restroContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 40px;
+}
+button:hover{
+    background-color: rgb(243, 61, 61);
+}
+.footer{
+    background-color: rgb(46, 43, 43);
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin: -10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer li{
+    list-style: none;
+}
+.subscription, .copyrights{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 
 
