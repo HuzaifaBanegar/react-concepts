@@ -1,3 +1,101 @@
-#heading{
-    color: red;
+body{
+    margin:0px;
+    padding: 10px;  
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(218, 217, 217);
+    margin-bottom: 10px;
+    font-size: smaller;
+    font-weight: bold;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+img{
+    height: 100%;
+    margin-right: 20px;
+}
+.navitems>ul{
+    display: flex;
+}
+.navitems>ul>li{
+    padding: 10px 15px;
+    list-style: none;
+}
+#banner_img{
+    height: 480px;
+}
+.searchBar{
+    margin-bottom: 20px;
+    text-align: right;
+}
+.mainbody{
+    width: 95%;
+    margin: auto;
+}
+.banner{
+    margin-bottom: 20px;
+}
+.searchBar button{
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(181, 47, 47);
+    padding: 5px;
+    color: white;
+    margin: 2px;
+    font-size: smaller;
+}
+.searchBar input{
+    border:2px solid rgb(218, 217, 217);;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    font-size: smaller;
+}
+.restroCard{
+    display: block;
+    width: 250px;
+    /* height: 300px; */
+    gap: 10px;
+    padding: 10px;
+    font-size: smaller;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+}
+.thumbnail{
+    height: 65%;
+    margin-bottom: 5px;
+}
+.thumbnail>img{
+    width: 100%;
+}
+.restroDetails{
+    display: block;
+}
+.about_restro, .feat_restro{
+    display: flex;
+    justify-content: space-between;
+}
+.restroCard button{
+    width: 100%;
+    font-size: smaller;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(181, 47, 47);
+    padding: 5px;
+}
+
+
+
+
