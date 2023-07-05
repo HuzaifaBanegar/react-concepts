@@ -26,6 +26,10 @@ img{
 .navitems>ul>li{
     padding: 10px 15px;
     list-style: none;
+    cursor: pointer;
+}
+.navitems>ul>li:hover{
+    color:rgb(181, 47, 47); ;
 }
 #banner_img{
     height: 480px;
@@ -56,6 +60,7 @@ img{
     padding: 5px;
     margin: 2px;
     font-size: smaller;
+    width: 250px;
 }
 .restroCard{
     display: block;
