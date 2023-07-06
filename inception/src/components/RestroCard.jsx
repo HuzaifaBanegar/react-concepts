@@ -3,7 +3,6 @@ import { CDN_url } from "../utils/constant";
 
 export const RestroCard=(props)=>{
     const {resData}=props;
-    // console.log(resData)
     return(
         <div className="restroCard">
             <div className="thumbnail">
@@ -11,7 +10,7 @@ export const RestroCard=(props)=>{
             </div>
             <div className="restroDetails">
                 <div className="about_restro">
-                    <h6>{resData.name}</h6>
+                    <strong>{resData.name}</strong>
                 </div>
                 <div className="feat_restro">
                     <p>Cuisine: {resData.cuisines[0]}</p>

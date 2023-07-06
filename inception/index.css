@@ -43,7 +43,8 @@ img{
     margin: auto;
 }
 .banner{
-    margin-bottom: 20px;
+    width: 95%;
+    margin:0px auto 20px;
 }
 .searchBar button{
     border:none;
