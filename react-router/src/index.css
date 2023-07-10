@@ -1,0 +1,15 @@
+body{
+  margin: 0px
+}
+:root{
+  --body_background: white;
+  --body_color: black;
+  --body_link : navy;
+}
+[data-theme="dark"]{
+  --body_background: #02507D;
+  --body_color: white;
+  --body_link : cyan;
+}
+
+

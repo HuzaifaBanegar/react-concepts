@@ -1,0 +1,16 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+#Navbar{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(23, 169, 252, 0.59);
+    justify-items: center;
+    
+}
+.navigation{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
