@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const Navbar=()=>{
 
     const navbar=[
-        {title:'Home', to:'/about'},
+        {title:'About', to:'/about'},
         {title:'Skills', to:'/skills'},
         {title:'Project', to:'/project'},
         {title:'Testimonials', to:'/testimonials'},
