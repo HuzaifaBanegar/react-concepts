@@ -6,6 +6,8 @@ import { About } from './Pages/About';
 import { Projects } from './Pages/Projects';
 import { Testimonials } from './Pages/Testimonials';
 import { Skills } from './Pages/Skills';
+import {ProjectDetails} from './Pages/ProjectDetails'
+import {Error} from './Pages/Error'
 function App() {
   let data={
     name:'Huzaifa',
@@ -21,6 +23,8 @@ function App() {
           <Route path="/skills" element={<Skills/>}></Route>
           <Route path="/testimonials" element={<Testimonials/>}></Route>
           <Route path="/project" element={<Projects/>}></Route>
+          <Route path="/project/:id" element={<ProjectDetails/>}></Route>
+          <Route path="/#" element={<Error/>}></Route>
         </Routes>
       </div>
       
