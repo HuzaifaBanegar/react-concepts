@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom"
 import { useState } from "react";
-import { ProjectDetails } from "./ProjectDetails";
+import { AuthContext } from "../Components/AuthContext";
+import { useContext } from "react";
+
 export const Projects=()=>{
-    const [id, setId]=useState(123)
+    const {token}=useContext(AuthContext)
+    const [id, setId]=useState(123);
+
+    if(!token){
+        return (<div><h1>Login first Bhadwya</h1></div>)
+    }
     return (
         <div>
             <Link to={`/project/:${id}`} >Project Page</Link>

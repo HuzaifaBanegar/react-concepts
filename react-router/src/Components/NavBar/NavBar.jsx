@@ -15,7 +15,7 @@ export const Navbar=()=>{
 
     return(
         <div id="Navbar" >
-            <h2>Huzaifa Banegar</h2>
+            <Link to={'/'}><h2>Huzaifa Banegar</h2></Link>
             <div className="navigation">
                 {
                     navbar.map((e)=>{
