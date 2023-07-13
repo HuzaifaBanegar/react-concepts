@@ -1,8 +1,11 @@
 import "../../index.css"
 import { LOGO_url } from "../utils/constant"
 import { UncontrolledExample } from "./Carousal";
+import { useSelector } from "react-redux";
 
 export const Header= ()=>{
+    const cartItems= useSelector(store=>store.cart.items);
+
     return (
         <>
             <div className="header">
@@ -13,8 +16,8 @@ export const Header= ()=>{
                     <ul>
                     <li>Home</li>
                     <li>About</li>
-                    <li>Cart</li>
                     <li>Login</li>
+                    <li>Cart<span style={{color:'red'}}>  {cartItems.length}</span></li>
                     </ul>
                 </div>
             </div>

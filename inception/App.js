@@ -25,14 +25,18 @@ NavItems
 -Address
 -Contacts
 */ 
-const AppLayout=()=>{
+import { Provider } from "react-redux";
+import store from "./src/utils/store";
+
+  const AppLayout=()=>{
     return (
-        <div className="app">
-            {Header()}
-            <Body></Body>
-            <Footer/>
-            
-        </div>
+        <Provider store={store}>
+            <div className="app">
+                <Header/>
+                <Body></Body>
+                <Footer/>
+            </div>
+        </Provider>
     )
 }
 

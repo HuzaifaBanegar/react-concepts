@@ -1,8 +1,24 @@
 import "../../index.css"
 import { CDN_url } from "../utils/constant";
+import { useDispatch } from "react-redux";
+import { addItem , removeItem} from "../utils/cartSlice";
+
+
 
 export const RestroCard=(props)=>{
     const {resData}=props;
+
+    // console.log(resData)
+    const dispatch= useDispatch()
+    
+    const handleCart=()=>{
+        alert("added item")
+        dispatch(addItem(resData))
+    }
+    const removeCart=()=>{
+        alert("removed item")
+        
+    }
     return(
         <div className="restroCard">
             <div className="thumbnail">
@@ -22,7 +38,8 @@ export const RestroCard=(props)=>{
                 </div>
                 
             </div>
-            <button>Add To Cart</button>
+            <button onClick={handleCart}>Add To Cart</button>
+            <button onClick={removeCart}>Remove from Cart</button>
         </div>
     )
 }
