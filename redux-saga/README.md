@@ -68,3 +68,47 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Plan to create a todo app
+
+`Components:`
+1. Navbar
+2. Login/Signup
+3. Add Todo
+4. Dashboard
+### -----------------------------------
+
+`Page 1 -> Login/ Signup`
+- email and password form
+
+### -----------------------------------
+
+`Page 2 -> Add Todos`
+-Form:
+    - Create Todo input
+    - Status select (To-do / in-progress / completed)
+    - Add button 
+
+### -----------------------------------
+
+`Page 3 -> Dashboard`
+### (If No todos)-> Show No Todos Page 
+
+As per status 3 sections
+- To do 
+    - select to change status 
+    - Delete button
+- in progress
+     - select to change status 
+     - Delete button
+- Completed 
+    - select to change status 
+    - Delete button
+
+
+
+
+
+
