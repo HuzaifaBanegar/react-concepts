@@ -1,7 +1,7 @@
 import "../../index.css"
 import { CDN_url } from "../utils/constant";
 import { useDispatch } from "react-redux";
-import { addItem , removeItem} from "../utils/cartSlice";
+import { addItem } from "../utils/cartSlice";
 
 
 
@@ -12,7 +12,7 @@ export const RestroCard=(props)=>{
     const dispatch= useDispatch()
     
     const handleCart=()=>{
-        alert("added item")
+        alert(`added ${resData.name} to the cart`)
         dispatch(addItem(resData))
     }
     const removeCart=()=>{
