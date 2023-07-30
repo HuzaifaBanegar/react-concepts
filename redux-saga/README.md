@@ -78,6 +78,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 2. Login/Signup
 3. Add Todo
 4. Dashboard
+5. Shimmer
+6. No Todo page
+
 ### -----------------------------------
 
 `Page 1 -> Login/ Signup`
